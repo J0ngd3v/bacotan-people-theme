@@ -1,0 +1,148 @@
+body {
+  background-color: #f9f9f9;
+}
+h5.card-title {
+  font-family: "Courier Prime", monospace !important;
+}
+a.navbar-brand {
+  font-family: "Bowlby One", cursive;
+  font-size: 30px;
+  text-decoration: underline;
+  text-decoration-thickness: 8px;
+  text-decoration-color: #009f8f;
+  display: inline-block;
+  transform: rotate(-1deg);
+}
+
+nav.bg-custome {
+  background-color: whitesmoke;
+  border-bottom: 8px solid black !important;
+}
+
+ul {
+  font-family: "Courier Prime", monospace;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+li {
+  margin-left: 30px;
+}
+a.nav-link {
+  color: #000000 !important;
+}
+a.nav-link:hover {
+  color: #009f8f !important;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: black;
+}
+
+.fullscreen-background {
+  background-image: url("/static/kon.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+  position: relative;
+}
+
+.centered-button {
+  position: absolute;
+  font-family: "Bowlby One", cursive;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px 40px 20px 40px;
+  font-size: 50px;
+  border-color: #000000;
+  background-color: #009f8f;
+  color: #000000;
+  font-weight: bold;
+  border-right: 5px solid black;
+  border-left: 5px solid black;
+  border-bottom: 10px solid black;
+  border-bottom-left-radius: 5px solid black;
+  transform: translate(-50%, -50%) rotate(-1deg);
+  transition: color 0.5s ease-in-out;
+}
+
+.centered-button:hover {
+  color: white;
+  transition: color 0.5s ease-in-out;
+}
+#quote {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  text-align: center;
+  font-family: "Courier Prime", monospace;
+  color: aliceblue;
+}
+
+.about-us-section {
+  background-color: #f9f9f9;
+  padding: 10px;
+  position: absolute;
+  font-family: "Bowlby One", cursive;
+}
+
+.section-title {
+  font-family: "Bowlby One", cursive;
+  background-color: #009f8f;
+  display: inline-block;
+  padding: 10px;
+  margin: 0;
+  border-right: 5px solid black;
+  border-left: 5px solid black;
+  border-bottom: 6px solid black;
+  border-bottom-left-radius: 5px solid black;
+  transition: color 0.5s ease-in-out;
+}
+.section-title:hover {
+  color: white;
+  transition: color 0.5s ease-in-out;
+}
+.section-description {
+  margin-top: 30px !important;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 0;
+  font-family: "Courier Prime", monospace;
+  background-color: #e7e7e7;
+  display: inline-block;
+  padding: 10px;
+  margin: 0;
+  border: 3px dashed rgb(0, 0, 0);
+  border-right: 5px solid black;
+  border-bottom: 6px solid black;
+  border-bottom-left-radius: 5px solid black;
+}
+.image-list img {
+  display: inline-block;
+  margin-right: 10px; /* Optional margin between images */
+}
+
+@media (max-width: 768px) {
+  .centered-button {
+    font-size: 40px;
+    padding: 10px 20px;
+    top: 50%;
+    left: 50%;
+  }
+  #quote {
+    position: absolute;
+    top: 74%;
+    left: 47%;
+    font-size: 24px;
+    font-family: "Courier Prime", monospace;
+    color: aliceblue;
+  }
+}

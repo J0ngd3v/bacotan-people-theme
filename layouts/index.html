@@ -1,0 +1,101 @@
+{{- define "main" }}
+<!-- navbar -->
+
+<!-- end navbar -->
+<!-- hero section -->
+<div class="fullscreen-background">
+  <div class="content">
+    <button class="centered-button" onclick="scrollToTop()">
+      PEMUDA INDONESIA
+    </button>
+    <p id="quote">`{{.Site.Params.quote}}`</p>
+  </div>
+</div>
+
+<div
+  class="image-list d-flex justify-content-center"
+  style="
+    margin: 0;
+    display: inline-block;
+    padding: 10px;
+    margin: 0;
+    opacity: 0.5;
+    margin-top: 80px;
+  "
+>
+  <img
+    src="static/hugo.png"
+    width="60px"
+    alt="Gambar 1"
+    title="Kami memakai SSG Hugo untuk membuat artikel"
+  />
+  <img
+    src="static/netlify.svg"
+    width="60px"
+    alt="Gambar 2"
+    title="Wesbite ini di hosting di netlify.com"
+  />
+  <img
+    src="static/bootstrap.svg"
+    width="80px"
+    alt="Gambar 3"
+    title="Website kami dibuat dengan menggunakan framework css Bootstrap"
+  />
+  <img
+    src="static/github.svg"
+    width="60px"
+    alt=""
+    title="Semua resource di jongnesia ini di taruh di dalam Github"
+  />
+</div>
+<!-- end hero -->
+
+<!-- about us -->
+<div class="container div-custome" style="margin-top: 80px">
+  <h2 class="section-title">TENTANG KAMI</h2>
+  <p class="section-description">{{.Site.Params.about}}</p>
+</div>
+<!-- about us end -->
+
+<!-- FAQ -->
+<div class="container" style="margin-top: 50px">
+  <div class="row justify-content-center">
+    <div class="col-md-4">
+      <details>
+        <summary>PROJECT</summary>
+        <p>
+          Ada beberpa project yang saya kerjakan , bisa dilihat di
+          github.com/@j0ngd3v. Salah satunya yaitu KumpLink (Kumpulan Link)
+        </p>
+      </details>
+      <details>
+        <summary>PENDIRI</summary>
+        <p>
+          Kami didirikan oleh Rysnanto selaku admin utama di forum jongnesia.
+        </p>
+      </details>
+      <details>
+        <summary>VISI & MISI</summary>
+        <p>
+          Menciptkaan pemuda yang produktif serta misi kami adalah membagikan
+          ilmu walau dikit untuk teman - teman yang membtuhkan ilmu ini
+        </p>
+      </details>
+      <details>
+        <summary>Group Forum</summary>
+        <p></p>
+      </details>
+    </div>
+    <div class="col-md-3"></div>
+    <div class="col-md-5">
+      <p class="section-description" style="margin-top: 0px !important">
+        <img class="profile" src="static/kon.jpg" alt="" /><br />
+        Jl. Raya Semarang Surabaya Kab. Rembang Lok SMK UMAR FATAH
+      </p>
+    </div>
+  </div>
+</div>
+<!-- end FAQ -->
+
+
+{{- end }}

@@ -1,0 +1,63 @@
+{{- define "style"}}
+<link rel="stylesheet" href="../style.css" />
+<link rel="shortcut icon" href="../static/favicon.png" type="image/x-icon" />
+<style>
+  li.footer {
+    display: inline;
+    margin: 0;
+  }
+  ol {
+    margin-left: -32px !important;
+    margin-top: -20px;
+  }
+
+  div.card {
+    background-color: #f4d9ae !important;
+    border: 5px dashed black;
+    border-bottom-left-radius: 5px solid black;
+  }
+  @media (max-width: 768px) {
+    img.profile {
+      width: 300px;
+    }
+    .footer p {
+      text-align: center;
+    }
+    .footer ol {
+      margin-left: 20px !important;
+    }
+    .div-custome {
+      text-align: left;
+    }
+  }
+</style>
+{{end}} {{- define "main" }}
+<div class="container" style="margin-top: 100px">
+  <div class="row justify-content-center align-items-center h-100">
+    {{ range .Pages }}
+    <div class="col-md-4 mt-4">
+      <a href="{{.Permalink}}" style="text-decoration: none; color: black">
+        <div class="card">
+          <!-- <img
+            src="{{.Params.ilustration}}"
+            class="card-img-top"
+            width="100%"
+            alt="..."
+          /> -->
+          <div class="card-body">
+            <div
+              class="card-title"
+              style="font-family: Courier Prime, monospace"
+            >
+              <h5 style="font-family: 'Bowlby One', cursive">{{.Title}}</h5>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    {{end}}
+  </div>
+</div>
+<!--  blog end-->
+
+{{end}}
